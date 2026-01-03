@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/kevin/Desktop/final/build/cmake_install.cmake",
+		"/Users/kevin/Desktop/final/build/external/cmake_install.cmake",
+		"/Users/kevin/Desktop/final/build/external/glad-3.3/cmake_install.cmake",
+		"/Users/kevin/Desktop/final/build/external/glfw-3.1.2/cmake_install.cmake",
+		"/Users/kevin/Desktop/final/build/external/glfw-3.1.2/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

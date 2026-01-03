@@ -1,0 +1,15 @@
+/Users/kevin/Desktop/final/build/CMakeFiles/lab2_building.dir
+/Users/kevin/Desktop/final/build/CMakeFiles/lab2_skybox.dir
+/Users/kevin/Desktop/final/build/CMakeFiles/final.dir
+/Users/kevin/Desktop/final/build/CMakeFiles/edit_cache.dir
+/Users/kevin/Desktop/final/build/CMakeFiles/rebuild_cache.dir
+/Users/kevin/Desktop/final/build/external/CMakeFiles/edit_cache.dir
+/Users/kevin/Desktop/final/build/external/CMakeFiles/rebuild_cache.dir
+/Users/kevin/Desktop/final/build/external/glad-3.3/CMakeFiles/glad.dir
+/Users/kevin/Desktop/final/build/external/glad-3.3/CMakeFiles/edit_cache.dir
+/Users/kevin/Desktop/final/build/external/glad-3.3/CMakeFiles/rebuild_cache.dir
+/Users/kevin/Desktop/final/build/external/glfw-3.1.2/CMakeFiles/edit_cache.dir
+/Users/kevin/Desktop/final/build/external/glfw-3.1.2/CMakeFiles/rebuild_cache.dir
+/Users/kevin/Desktop/final/build/external/glfw-3.1.2/src/CMakeFiles/glfw.dir
+/Users/kevin/Desktop/final/build/external/glfw-3.1.2/src/CMakeFiles/edit_cache.dir
+/Users/kevin/Desktop/final/build/external/glfw-3.1.2/src/CMakeFiles/rebuild_cache.dir
