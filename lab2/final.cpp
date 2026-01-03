@@ -562,7 +562,7 @@ int main() {
     // --- Create skybox ---
     Skybox sky;
     // Adjust the path if your sky texture is different:
-    sky.initialize("lab2/sky.png");
+    sky.initialize("lab2/skyNeb.png");
 
     // --- Create buildings (example: keep your procedural city logic here) ---
     std::vector<Building> buildings;
@@ -656,20 +656,34 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
     if (action != GLFW_PRESS && action != GLFW_REPEAT) return;
 
     // Escape to quit
-    if (key == GLFW_KEY_ESCAPE) glfwSetWindowShouldClose(window, GL_TRUE);
+    if (key == GLFW_KEY_ESCAPE) {
+        glfwSetWindowShouldClose(window, GL_TRUE);
+        return;
+    }
 
-    // Orbit controls
-    if (key == GLFW_KEY_LEFT)  viewAzimuth -= 0.05f;
-    if (key == GLFW_KEY_RIGHT) viewAzimuth += 0.05f;
-    if (key == GLFW_KEY_UP)    viewPolar   -= 0.05f;
-    if (key == GLFW_KEY_DOWN)  viewPolar   += 0.05f;
+    // ------------------------------------------------------------
+    // Trees-style camera movement, adapted to this orbit camera:
+    //   A / D : orbit left/right (azimuth)
+    //   Q / E : orbit up/down   (polar)
+    //   W / S : zoom in/out     (distance)
+    // ------------------------------------------------------------
+    const float rotateSpeed = 0.05f;
+    const float moveSpeed   = 20.0f;
 
-    // Zoom
-    if (key == GLFW_KEY_EQUAL) viewDistance -= 20.0f;
-    if (key == GLFW_KEY_MINUS) viewDistance += 20.0f;
+    // Orbit (like trees.cpp A/D)
+    if (key == GLFW_KEY_A) viewAzimuth -= rotateSpeed;
+    if (key == GLFW_KEY_D) viewAzimuth += rotateSpeed;
 
-    // Clamp polar to avoid flip
-    viewPolar = glm::clamp(viewPolar, 0.1f, 3.04f);
+    // Pitch (use Q/E instead of arrow keys)
+    if (key == GLFW_KEY_Q) viewPolar   -= rotateSpeed;
+    if (key == GLFW_KEY_E) viewPolar   += rotateSpeed;
+
+    // Zoom (like trees.cpp W/S along forward)
+    if (key == GLFW_KEY_W) viewDistance -= moveSpeed;
+    if (key == GLFW_KEY_S) viewDistance += moveSpeed;
+
+    // Keep sensible limits (avoid flip / negative distance)
+    viewPolar    = glm::clamp(viewPolar, 0.1f, 3.04f);
     viewDistance = glm::clamp(viewDistance, 50.0f, 2000.0f);
 
     update_camera_orbit();
