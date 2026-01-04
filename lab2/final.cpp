@@ -581,6 +581,7 @@ int main() {
         "lab2/facade4.jpg"
     };
 
+    
     // "Minecraft-ish" infinite illusion: keep a fixed pool of buildings
     // and recycle them around the player as they move.
     const int BUILDING_COUNT = 220;

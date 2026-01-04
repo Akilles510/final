@@ -11,6 +11,10 @@ uniform sampler2D shadowMap;
 uniform vec3 lightPosition;
 uniform vec3 lightIntensity;
 
+uniform vec3 cameraPos;
+uniform vec3 fogColor;
+uniform float fogDensity;
+
 out vec3 finalColor;
 
 float ShadowFactor(vec4 fragPosLS, vec3 normal, vec3 lightDir)
@@ -48,5 +52,15 @@ void main() {
     vec3 ambient = 0.35 * albedo;
     vec3 diffuse = 0.85 * albedo * NdotL * shadow;
 
-    finalColor = ambient + diffuse;
+    vec3 color = ambient + diffuse;
+
+    // --- FOG ---
+    float d = length(worldPos - cameraPos);
+    float fogFactor = 1.0 - exp(-fogDensity * d * d);
+    fogFactor = clamp(fogFactor, 0.0, 1.0);
+    color = mix(color, fogColor, fogFactor);
+
+    finalColor = color;
+
+    
 }
