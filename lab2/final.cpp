@@ -290,6 +290,14 @@ struct Building {
 
     void render(const glm::mat4& vp, const glm::mat4& lightSpaceMatrix, GLuint depthMapTex) {
         glUseProgram(programID);
+        glUniform3fv(glGetUniformLocation(programID, "cameraPos"), 1, &eye_center[0]);
+
+        glUniform3f(glGetUniformLocation(programID, "fogColor"),
+                    0.08f, 0.10f, 0.14f);   // tweak if you want
+
+        glUniform1f(glGetUniformLocation(programID, "fogDensity"),
+                    0.00001f);           // tweak if too strong/weak
+
         glBindVertexArray(vertexArrayID);
 
         glm::mat4 model = glm::mat4(1.0f);
@@ -575,13 +583,12 @@ int main() {
 
     // Example layout (replace with your existing Lab 2 generation)
     const char* facades[] = {
-        "lab2/facade1.jpg",
-        "lab2/facade2.jpg",
-        "lab2/facade3.jpg",
-        "lab2/facade4.jpg"
+        "lab2/skin.png",
+        "lab2/skin2.png",
+        "lab2/skin3.png",
+        "lab2/skin4.png"
     };
 
-    
     // "Minecraft-ish" infinite illusion: keep a fixed pool of buildings
     // and recycle them around the player as they move.
     const int BUILDING_COUNT = 220;
