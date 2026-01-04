@@ -34,16 +34,15 @@ static GLFWwindow* window;
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
 
 // ------------------------
-// Camera (same style as Lab 2 building)
+// Camera (walk + turn)
 // ------------------------
 static glm::vec3 eye_center;
-static glm::vec3 lookat(0, 0, 0);
+static glm::vec3 lookat;
 static glm::vec3 up(0, 1, 0);
 
-// View control (orbit-style)
-static float viewAzimuth = 0.f;
-static float viewPolar   = 0.f;
-static float viewDistance = 600.0f;
+// Player-style movement (so the foreground can feel "infinite")
+static glm::vec3 playerPos(0.0f, 0.0f, 0.0f);
+static float yaw = 0.0f; // radians, turn left/right
 
 // ------------------------
 // Texture loaders
@@ -511,13 +510,17 @@ struct Skybox {
 };
 
 // ============================================================
-// Main
+// Helpers (random + camera)
 // ============================================================
-static void update_camera_orbit() {
-    // Same idea as Lab 2 orbit camera
-    eye_center.x = viewDistance * sin(viewPolar) * cos(viewAzimuth);
-    eye_center.y = viewDistance * cos(viewPolar);
-    eye_center.z = viewDistance * sin(viewPolar) * sin(viewAzimuth);
+static float rand01() {
+    return float(rand()) / float(RAND_MAX);
+}
+
+static void update_camera_walk() {
+    // Simple "walk + turn" camera.
+    glm::vec3 forward(cos(yaw), 0.0f, sin(yaw));
+    eye_center = playerPos + glm::vec3(0.0f, 120.0f, 0.0f);
+    lookat = eye_center + forward * 250.0f;
 }
 
 int main() {
@@ -554,10 +557,13 @@ int main() {
     depthLightSpaceID = glGetUniformLocation(depthProgram, "lightSpaceMatrix");
     depthModelID = glGetUniformLocation(depthProgram, "Model");
 
-    // Initial camera
-    viewAzimuth = 0.8f;
-    viewPolar = 1.0f;
-    update_camera_orbit();
+    // Random seed (for procedural placement)
+    srand(12345);
+
+    // Initial camera/player state
+    playerPos = glm::vec3(0.0f, 0.0f, 0.0f);
+    yaw = 0.0f;
+    update_camera_walk();
 
     // --- Create skybox ---
     Skybox sky;
@@ -575,28 +581,85 @@ int main() {
         "lab2/facade4.jpg"
     };
 
-    for (int x = -5; x <= 5; x++) {
-        for (int z = -5; z <= 5; z++) {
-            Building b;
-            float h = 40.0f + 10.0f * ((x + z + 100) % 5); // simple deterministic height
-            b.initialize(glm::vec3(x * 40.0f, 0.0f, z * 40.0f),
-                         glm::vec3(16.0f, h, 16.0f),
-                         facades[(abs(x) + abs(z)) % 4]);
-            buildings.push_back(b);
-        }
+    // "Minecraft-ish" infinite illusion: keep a fixed pool of buildings
+    // and recycle them around the player as they move.
+    const int BUILDING_COUNT = 220;
+    const float SPAWN_RADIUS = 900.0f;   // initial scatter radius
+    const float BASE_SIZE = 16.0f;
+
+    buildings.reserve(BUILDING_COUNT);
+    for (int i = 0; i < BUILDING_COUNT; ++i) {
+        Building b;
+        float angle = rand01() * 2.0f * float(M_PI);
+        float r = rand01() * SPAWN_RADIUS;
+        float x = cos(angle) * r;
+        float z = sin(angle) * r;
+
+        float h = 35.0f + rand01() * 120.0f;
+        int texIdx = int(rand01() * 4.0f) % 4;
+
+        b.initialize(glm::vec3(x, 0.0f, z),
+                     glm::vec3(BASE_SIZE, h, BASE_SIZE),
+                     facades[texIdx]);
+        buildings.push_back(b);
     }
-    
-    // ---------- Ground plane ----------
+
+    // Ground plane (separate, so we don't recycle it)
     Building ground;
-    ground.initialize(
-        glm::vec3(0.0f, 0.0f, 0.0f),          // position
-        glm::vec3(1200.0f, 2.0f, 1200.0f),    // scale
-        "lab2/facade0.jpg"                    // texture
-    );
-    buildings.push_back(ground);
+    ground.initialize(glm::vec3(0.0f, 0.0f, 0.0f),
+                      glm::vec3(4000.0f, 2.0f, 4000.0f),
+                      "lab2/facade0.jpg");
+
+    double lastTime = glfwGetTime();
+
+    // Infinite illusion parameters
+    const float ACTIVE_RADIUS = 900.0f;   // if a building is outside this radius, recycle it
+    const float AHEAD_MIN = 700.0f;       // how far ahead to respawn recycled buildings
+    const float AHEAD_RAND = 500.0f;
+    const float SIDE_RANGE = 800.0f;
 
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
+
+        // ------------------------------------------------------------
+        // Time step + input (walk + turn)
+        // ------------------------------------------------------------
+        double now = glfwGetTime();
+        float dt = float(now - lastTime);
+        lastTime = now;
+
+        const float moveSpeed = 300.0f;   // world units per second
+        const float turnSpeed = 1.8f;     // radians per second
+
+        if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) yaw -= turnSpeed * dt;
+        if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) yaw += turnSpeed * dt;
+
+        glm::vec3 forward(cos(yaw), 0.0f, sin(yaw));
+        glm::vec3 right(-forward.z, 0.0f, forward.x);
+
+        if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) playerPos += forward * (moveSpeed * dt);
+        if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) playerPos -= forward * (moveSpeed * dt);
+
+        // Optional: strafe with Q/E (handy for demo videos)
+        if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS) playerPos -= right * (moveSpeed * dt);
+        if (glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS) playerPos += right * (moveSpeed * dt);
+
+        update_camera_walk();
+
+        // ------------------------------------------------------------
+        // Recycle buildings to create an "infinite" foreground
+        // ------------------------------------------------------------
+        for (auto &b : buildings) {
+            glm::vec2 d(b.position.x - playerPos.x, b.position.z - playerPos.z);
+            if (glm::length(d) > ACTIVE_RADIUS) {
+                float ahead = AHEAD_MIN + rand01() * AHEAD_RAND;
+                float side = (rand01() * 2.0f - 1.0f) * SIDE_RANGE;
+                b.position = playerPos + forward * ahead + right * side;
+
+                // Change the height a bit to avoid repeating patterns
+                b.scale.y = 35.0f + rand01() * 120.0f;
+            }
+        }
         // ---------- PASS A: render depth map ----------
         glm::vec3 lightPos(200.0f, 600.0f, 200.0f);
         glm::vec3 lightTarget(0.0f, 0.0f, 0.0f);
@@ -616,6 +679,7 @@ int main() {
         for (auto& b : buildings) {
             b.renderDepth(depthProgram, depthModelID);
         }
+        ground.renderDepth(depthProgram, depthModelID);
 
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
@@ -635,13 +699,15 @@ int main() {
         // Render skybox first (as background)
         sky.render(viewMatrix, projectionMatrix);
 
-        // Render buildings
+        // Render buildings + ground
         for (auto& b : buildings) b.render(vp, lightSpaceMatrix, depthMap);
+        ground.render(vp, lightSpaceMatrix, depthMap);
 
         glfwSwapBuffers(window);
     }
 
     for (auto& b : buildings) b.cleanup();
+    ground.cleanup();
     sky.cleanup();
 
     glfwDestroyWindow(window);
@@ -653,6 +719,7 @@ int main() {
 // Input (same controls as your lab2_building style)
 // ------------------------
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode) {
+    (void)scancode; (void)mode;
     if (action != GLFW_PRESS && action != GLFW_REPEAT) return;
 
     // Escape to quit
@@ -660,31 +727,4 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
         glfwSetWindowShouldClose(window, GL_TRUE);
         return;
     }
-
-    // ------------------------------------------------------------
-    // Trees-style camera movement, adapted to this orbit camera:
-    //   A / D : orbit left/right (azimuth)
-    //   Q / E : orbit up/down   (polar)
-    //   W / S : zoom in/out     (distance)
-    // ------------------------------------------------------------
-    const float rotateSpeed = 0.05f;
-    const float moveSpeed   = 20.0f;
-
-    // Orbit (like trees.cpp A/D)
-    if (key == GLFW_KEY_A) viewAzimuth -= rotateSpeed;
-    if (key == GLFW_KEY_D) viewAzimuth += rotateSpeed;
-
-    // Pitch (use Q/E instead of arrow keys)
-    if (key == GLFW_KEY_Q) viewPolar   -= rotateSpeed;
-    if (key == GLFW_KEY_E) viewPolar   += rotateSpeed;
-
-    // Zoom (like trees.cpp W/S along forward)
-    if (key == GLFW_KEY_W) viewDistance -= moveSpeed;
-    if (key == GLFW_KEY_S) viewDistance += moveSpeed;
-
-    // Keep sensible limits (avoid flip / negative distance)
-    viewPolar    = glm::clamp(viewPolar, 0.1f, 3.04f);
-    viewDistance = glm::clamp(viewDistance, 50.0f, 2000.0f);
-
-    update_camera_orbit();
 }
