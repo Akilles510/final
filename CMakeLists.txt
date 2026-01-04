@@ -51,6 +51,7 @@ target_include_directories(final PRIVATE
   "${PROJECT_SOURCE_DIR}/external"
   "${PROJECT_SOURCE_DIR}/external/glfw-3.1.2/include"
   "${PROJECT_SOURCE_DIR}/external/glm-0.9.7.1"
+  "${CMAKE_SOURCE_DIR}/external/tinygltf-2.9.3"
 )
 
 target_link_libraries(final PRIVATE

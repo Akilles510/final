@@ -111,7 +111,7 @@ lab2_building_EXTERNAL_OBJECTS =
 lab2_building: CMakeFiles/lab2_building.dir/lab2/lab2_building.cpp.o
 lab2_building: CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o
 lab2_building: CMakeFiles/lab2_building.dir/build.make
-lab2_building: external/glad-3.3/libglad.a
+lab2_building: external/glad-3.3/libglad.dylib
 lab2_building: external/glfw-3.1.2/src/libglfw.3.1.dylib
 lab2_building: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
 lab2_building: CMakeFiles/lab2_building.dir/link.txt

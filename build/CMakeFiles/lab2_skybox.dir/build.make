@@ -111,7 +111,7 @@ lab2_skybox_EXTERNAL_OBJECTS =
 lab2_skybox: CMakeFiles/lab2_skybox.dir/lab2/lab2_skybox.cpp.o
 lab2_skybox: CMakeFiles/lab2_skybox.dir/lab2/render/shader.cpp.o
 lab2_skybox: CMakeFiles/lab2_skybox.dir/build.make
-lab2_skybox: external/glad-3.3/libglad.a
+lab2_skybox: external/glad-3.3/libglad.dylib
 lab2_skybox: external/glfw-3.1.2/src/libglfw.3.1.dylib
 lab2_skybox: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
 lab2_skybox: CMakeFiles/lab2_skybox.dir/link.txt

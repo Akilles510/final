@@ -27,6 +27,7 @@ CMakeFiles/final.dir/lab2/final.cpp.o: /Users/kevin/Desktop/final/lab2/final.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__xlocale.h \
@@ -251,6 +252,7 @@ CMakeFiles/final.dir/lab2/final.cpp.o: /Users/kevin/Desktop/final/lab2/final.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/nested_exception.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/operations.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/terminate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/enable_insertable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_negate.h \
@@ -402,6 +404,10 @@ CMakeFiles/final.dir/lab2/final.cpp.o: /Users/kevin/Desktop/final/lab2/final.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/nothrow_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/placement_new_delete.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__node_handle \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/accumulate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/inner_product.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/iota.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/partial_sum.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/put_character_sequence.h \
@@ -436,6 +442,7 @@ CMakeFiles/final.dir/lab2/final.cpp.o: /Users/kevin/Desktop/final/lab2/final.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/support.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/support/pthread.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/find_index.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/ignore.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/make_tuple_types.h \
@@ -493,6 +500,7 @@ CMakeFiles/final.dir/lab2/final.cpp.o: /Users/kevin/Desktop/final/lab2/final.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_empty.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_equality_comparable.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_execution_policy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_final.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h \
@@ -616,10 +624,15 @@ CMakeFiles/final.dir/lab2/final.cpp.o: /Users/kevin/Desktop/final/lab2/final.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/execution \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
@@ -627,15 +640,18 @@ CMakeFiles/final.dir/lab2/final.cpp.o: /Users/kevin/Desktop/final/lab2/final.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iterator \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/limits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/locale \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/new \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/optional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
@@ -652,6 +668,7 @@ CMakeFiles/final.dir/lab2/final.cpp.o: /Users/kevin/Desktop/final/lab2/final.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version \
@@ -718,6 +735,7 @@ CMakeFiles/final.dir/lab2/final.cpp.o: /Users/kevin/Desktop/final/lab2/final.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_set.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_setsize.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_zero.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_filesec_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_gid_t.h \
@@ -741,6 +759,7 @@ CMakeFiles/final.dir/lab2/final.cpp.o: /Users/kevin/Desktop/final/lab2/final.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_pid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rsize_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rune_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_s_ifmt.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_seek_set.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_sigaltstack.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_sigset_t.h \
@@ -770,6 +789,7 @@ CMakeFiles/final.dir/lab2/final.cpp.o: /Users/kevin/Desktop/final/lab2/final.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/qos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/resource.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/types.h \
@@ -866,8 +886,26 @@ CMakeFiles/final.dir/lab2/final.cpp.o: /Users/kevin/Desktop/final/lab2/final.cpp
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/glm.hpp \
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/geometric.hpp \
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/detail/setup.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/exponential.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/geometric.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/constants.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat3x3.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat4x4.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/trigonometric.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/vec3.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/vec4.hpp \
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/constants.hpp \
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/constants.inl \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/quaternion.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/quaternion.inl \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat2x2.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat2x3.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat2x4.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat3x2.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat3x3.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat3x4.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat4x2.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat4x3.hpp \
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat4x4.hpp \
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/matrix.hpp \
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/trigonometric.hpp \
@@ -876,6 +914,17 @@ CMakeFiles/final.dir/lab2/final.cpp.o: /Users/kevin/Desktop/final/lab2/final.cpp
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/vec4.hpp \
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/matrix_transform.hpp \
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/matrix_transform.inl \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/type_ptr.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/type_ptr.inl \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/glm.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/constants.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/quaternion.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/glm.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtx/quaternion.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtx/norm.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtx/norm.inl \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtx/quaternion.hpp \
+  /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtx/quaternion.inl \
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/integer.hpp \
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat2x2.hpp \
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat2x3.hpp \
@@ -894,6 +943,9 @@ CMakeFiles/final.dir/lab2/final.cpp.o: /Users/kevin/Desktop/final/lab2/final.cpp
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/vec4.hpp \
   /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/vector_relational.hpp \
   /Users/kevin/Desktop/final/external/stb/stb_image.h \
+  /Users/kevin/Desktop/final/external/tinygltf-2.9.3/json.hpp \
+  /Users/kevin/Desktop/final/external/tinygltf-2.9.3/tiny_gltf.h \
+  /Users/kevin/Desktop/final/lab2/Person/person.h \
   /Users/kevin/Desktop/final/lab2/render/shader.h
 
 CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/render/shader.cpp \
@@ -1683,19 +1735,29 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
   /Users/kevin/Desktop/final/lab2/render/shader.h
 
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem:
-
 /Users/kevin/Desktop/final/lab2/render/shader.cpp:
+
+/Users/kevin/Desktop/final/lab2/Person/person.h:
+
+/Users/kevin/Desktop/final/external/tinygltf-2.9.3/tiny_gltf.h:
 
 /Users/kevin/Desktop/final/external/stb/stb_image.h:
 
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtx/norm.hpp:
+
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtx/quaternion.hpp:
+
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/type_ptr.inl:
+
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/type_ptr.hpp:
+
 /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/matrix_transform.inl:
 
-/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/trigonometric.hpp:
-
 /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/matrix.hpp:
+
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/quaternion.inl:
+
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/trigonometric.hpp:
 
 /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/exponential.hpp:
 
@@ -1767,37 +1829,43 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat4x2.hpp:
 
-/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/packing.hpp:
-
-/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/detail/func_geometric.inl:
-
-/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat3x4.hpp:
-
 /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat3x2.hpp:
 
 /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat2x4.hpp:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/placement_new_delete.h:
-
-/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat2x3.hpp:
-
 /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat2x2.hpp:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ctype.h:
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/fwd.hpp:
 
-/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/geometric.hpp:
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtx/quaternion.inl:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/fill_n.h:
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/detail/type_mat.hpp:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/detected_or.h:
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/detail/precision.hpp:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h:
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/common.hpp:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:
+/Users/kevin/Desktop/final/external/glfw-3.1.2/include/GLFW/glfw3.h:
 
-/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/detail/setup.hpp:
+/Users/kevin/Desktop/final/external/glad-3.3/include/KHR/khrplatform.h:
+
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/glm.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_wctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_wchar.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_string.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_stdlib.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_stdio.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_ctype.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/___wctype.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_cv_quals.h:
 
@@ -1863,6 +1931,8 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_sigaltstack.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_s_ifmt.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rsize_t.h:
@@ -1881,17 +1951,15 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int32_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ino_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ino64_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_id_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_gid_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/float.h:
 
@@ -1928,8 +1996,6 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdlib.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/pthread/qos.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_ptrcheck.h:
 
@@ -1987,13 +2053,15 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_filesec_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/optional:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:
 
@@ -2001,7 +2069,21 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_gid_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/signal.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/execution:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h:
 
@@ -2011,9 +2093,9 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cwctype:
 
-/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/detail/type_mat.hpp:
-
 /Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/detail/func_common.inl:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/machine/_structs.h:
 
@@ -2036,10 +2118,6 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit:
-
-/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/glm.hpp:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_wctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic:
 
@@ -2077,11 +2155,19 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/no_destroy.h:
 
-/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/detail/precision.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/push_heap.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:
+
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/detail/setup.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/fill_n.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/detected_or.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:
 
@@ -2102,8 +2188,6 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iterator:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_stdio.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__node_handle:
 
@@ -2229,6 +2313,10 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/container_traits.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_execution_policy.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h:
@@ -2269,14 +2357,6 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/invoke.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_heap.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wctype.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h:
@@ -2304,8 +2384,6 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/generate.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/container_traits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:
 
@@ -2345,9 +2423,11 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_no_subrange.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h:
 
-/Users/kevin/Desktop/final/external/glad-3.3/include/KHR/khrplatform.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h:
 
@@ -2360,6 +2440,8 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/make_tuple_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/find_index.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_useconds_t.h:
 
@@ -2384,8 +2466,6 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/errc.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/extern_template_lists.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/tuple:
 
@@ -2467,6 +2547,16 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/partial_sum.h:
 
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/packing.hpp:
+
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/detail/func_geometric.inl:
+
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat3x4.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/iota.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/unreachable_sentinel.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/nothrow_t.h:
@@ -2474,10 +2564,6 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/new_handler.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/launder.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/global_typed_new_delete.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/allocate.h:
 
@@ -2494,6 +2580,8 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
+
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtx/norm.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h:
 
@@ -2689,6 +2777,8 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/default_sentinel.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/data.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stddef.h:
@@ -2723,19 +2813,15 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:
 
-/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/fwd.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_time_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/constexpr_c_functions.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/istream.h:
 
@@ -2781,6 +2867,8 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/element_count.h:
 
+/Users/kevin/Desktop/final/external/tinygltf-2.9.3/json.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/uses_allocator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/prev_permutation.h:
@@ -2802,6 +2890,10 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/operations.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/temporary_buffer.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/global_typed_new_delete.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_swap.h:
 
@@ -2837,8 +2929,6 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__configuration/availability.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_ctype.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site:
@@ -2848,6 +2938,8 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/semiregular.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unbounded_array.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/accumulate.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/nested_exception.h:
 
@@ -2981,13 +3073,13 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert:
 
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/gtc/quaternion.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/locale:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/transform.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/stable_sort.h:
-
-/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/common.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_ptrdiff_t.h:
 
@@ -3003,8 +3095,6 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/hash.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_string.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/synth_three_way.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_negate.h:
@@ -3019,9 +3109,9 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_unsigned.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/signal.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/support.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray:
 
 /Users/kevin/Desktop/final/external/glad-3.3/include/glad/gl.h:
 
@@ -3063,8 +3153,6 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_sentinel.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_stdlib.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__debug_utils/sanitizers.h:
@@ -3095,6 +3183,8 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/unique.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/inner_product.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/min.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception:
@@ -3111,11 +3201,19 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/destruct_n.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/___wctype.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_heap.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partial_sort_copy.h:
+
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/geometric.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/byte.h:
 
@@ -3179,13 +3277,7 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_sorted_until.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc_type.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_wctype_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stdarg_va_list.h:
 
@@ -3202,6 +3294,10 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_partitioned.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/inplace_merge.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/predicate.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/replace.h:
 
@@ -3252,10 +3348,6 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/upper_bound.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/predicate.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h:
 
@@ -3341,6 +3433,10 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/reverse_iterator.h:
 
+/Users/kevin/Desktop/final/external/glm-0.9.7.1/glm/mat2x3.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/placement_new_delete.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h:
@@ -3371,8 +3467,6 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/check_memory_order.h:
 
-/Users/kevin/Desktop/final/external/glfw-3.1.2/include/GLFW/glfw3.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/__stddef_offsetof.h:
@@ -3390,6 +3484,8 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_mb_cur_max.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_mcontext.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/extern_template_lists.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/count.h:
 
@@ -3414,6 +3510,14 @@ CMakeFiles/final.dir/lab2/render/shader.cpp.o: /Users/kevin/Desktop/final/lab2/r
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_types.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc_type.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h:
 

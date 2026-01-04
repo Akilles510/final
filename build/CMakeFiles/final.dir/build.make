@@ -111,7 +111,7 @@ final_EXTERNAL_OBJECTS =
 final: CMakeFiles/final.dir/lab2/final.cpp.o
 final: CMakeFiles/final.dir/lab2/render/shader.cpp.o
 final: CMakeFiles/final.dir/build.make
-final: external/glad-3.3/libglad.a
+final: external/glad-3.3/libglad.dylib
 final: external/glfw-3.1.2/src/libglfw.3.1.dylib
 final: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
 final: CMakeFiles/final.dir/link.txt
