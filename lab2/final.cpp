@@ -75,7 +75,7 @@ static GLuint LoadTextureTileBox(const char* texture_file_path) {
 
 static GLuint LoadSkyboxTexture(const char* texture_file_path) {
     int w, h, channels;
-    // Lab2 skybox often flips; keep consistent with your lab2_skybox.cpp
+
     stbi_set_flip_vertically_on_load(true);
     uint8_t* img = stbi_load(texture_file_path, &w, &h, &channels, 3);
     if (!img) {
@@ -127,13 +127,13 @@ static void initShadowMap() {
 
 
 // ============================================================
-// Building (Lab2 city)  +  (Point 3) normals buffer added
+// Building structure
 // ============================================================
 struct Building {
     glm::vec3 position;
     glm::vec3 scale;
 
-    // Vertex definition for a box on the XZ plane (same as your Lab 2)
+    // Vertex definition for a box on the XZ plane
     GLfloat vertex_buffer_data[72] = {
         // Front face
         -1.0f, 0.0f,  1.0f,
@@ -172,7 +172,7 @@ struct Building {
         -1.0f, 0.0f,  1.0f,
     };
 
-    // Neutral color (kept for your current shader)
+    // Neutral color
     GLfloat color_buffer_data[72] = {
         0.5f, 0.5f, 0.5f,  0.5f, 0.5f, 0.5f,  0.5f, 0.5f, 0.5f,  0.5f, 0.5f, 0.5f,
         0.5f, 0.5f, 0.5f,  0.5f, 0.5f, 0.5f,  0.5f, 0.5f, 0.5f,  0.5f, 0.5f, 0.5f,
@@ -182,7 +182,7 @@ struct Building {
         0.5f, 0.5f, 0.5f,  0.5f, 0.5f, 0.5f,  0.5f, 0.5f, 0.5f,  0.5f, 0.5f, 0.5f
     };
 
-    // UVs (same idea as Lab 2; tile V a bit)
+    // UVs
     GLfloat uv_buffer_data[48] = {
         // Front
         0.0f, 1.0f,  1.0f, 1.0f,  1.0f, 0.0f,  0.0f, 0.0f,
@@ -228,7 +228,7 @@ struct Building {
     GLuint vertexBufferID = 0;
     GLuint colorBufferID  = 0;
     GLuint uvBufferID     = 0;
-    GLuint normalBufferID = 0; // (Point 3)
+    GLuint normalBufferID = 0;
     GLuint indexBufferID  = 0;
 
     GLuint programID = 0;
@@ -256,7 +256,7 @@ struct Building {
         glBindBuffer(GL_ARRAY_BUFFER, colorBufferID);
         glBufferData(GL_ARRAY_BUFFER, sizeof(color_buffer_data), color_buffer_data, GL_STATIC_DRAW);
 
-        // Tile V coordinate (same idea as Lab 2)
+        // Tile V coordinate
         for (int i = 0; i < 24; ++i) uv_buffer_data[2 * i + 1] *= 5;
 
         glGenBuffers(1, &uvBufferID);
@@ -272,7 +272,6 @@ struct Building {
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBufferID);
         glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(index_buffer_data), index_buffer_data, GL_STATIC_DRAW);
 
-        // Same shader as your Lab 2 buildings (texture mapping)
         programID = LoadShadersFromFile("lab2/lit_box.vert", "lab2/lit_box.frag");
         mvpMatrixID = glGetUniformLocation(programID, "MVP");
         modelMatrixID = glGetUniformLocation(programID, "Model");
@@ -330,8 +329,7 @@ struct Building {
         glBindBuffer(GL_ARRAY_BUFFER, uvBufferID);
         glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 0, (void*)0);
 
-        // (Point 3) Normals attribute (location 3)
-        // Not used by Lab 2 shader yet, but ready for Lab 3 lighting merge.
+        // Normals attribute 
         glEnableVertexAttribArray(3);
         glBindBuffer(GL_ARRAY_BUFFER, normalBufferID);
         glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
@@ -394,7 +392,7 @@ struct Building {
 };
 
 // ============================================================
-// Skybox (from lab2_skybox.cpp, integrated)
+// Skybox structure
 // ============================================================
 struct Skybox {
     GLfloat vertex_buffer_data[72] = {
@@ -417,7 +415,7 @@ struct Skybox {
         12,13,14, 12,14,15,  16,17,18, 16,18,19,  20,21,22, 20,22,23
     };
 
-    // UVs mapped for your skybox layout (keep same as your lab2_skybox.cpp)
+    // UVs mapped for your skybox layout
     GLfloat uv_buffer_data[48] = {
         // Front (+Z)
         0.25f, 0.6667f,  0.50f, 0.6667f,  0.50f, 0.3333f,  0.25f, 0.3333f,
@@ -575,13 +573,12 @@ int main() {
 
     // --- Create skybox ---
     Skybox sky;
-    // Adjust the path if your sky texture is different:
     sky.initialize("lab2/skyNeb.png");
 
-    // --- Create buildings (example: keep your procedural city logic here) ---
+    // --- Create buildings ---
     std::vector<Building> buildings;
 
-    // Example layout (replace with your existing Lab 2 generation)
+    // Example layout
     const char* facades[] = {
         "lab2/skin.png",
         "lab2/skin2.png",
@@ -612,7 +609,7 @@ int main() {
         buildings.push_back(b);
     }
 
-    // Ground plane (separate, so we don't recycle it)
+    // Ground plane
     Building ground;
     ground.initialize(glm::vec3(0.0f, 0.0f, 0.0f),
                       glm::vec3(4000.0f, 2.0f, 4000.0f),
@@ -648,7 +645,7 @@ int main() {
         if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) playerPos += forward * (moveSpeed * dt);
         if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) playerPos -= forward * (moveSpeed * dt);
 
-        // Optional: strafe with Q/E (handy for demo videos)
+        // Strafe from earlier tests
         if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS) playerPos -= right * (moveSpeed * dt);
         if (glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS) playerPos += right * (moveSpeed * dt);
 
@@ -673,7 +670,7 @@ int main() {
         glm::vec3 lightTarget = playerPos;
 
         glm::mat4 lightView = glm::lookAt(lightPos, lightTarget, glm::vec3(0, 1, 0));
-        float orthoSize = 1200.0f; // Change how much shadow in the scene. 
+        float orthoSize = 1200.0f; // Change how much shadow in the scene. CHANGE IF WANNA SEE DIFFERENCE
         glm::mat4 lightProj = glm::ortho(-orthoSize, orthoSize, -orthoSize, orthoSize, 1.0f, 2000.0f);
         glm::mat4 lightSpaceMatrix = lightProj * lightView;
 
@@ -724,7 +721,7 @@ int main() {
 }
 
 // ------------------------
-// Input (same controls as your lab2_building style)
+// Input handling
 // ------------------------
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode) {
     (void)scancode; (void)mode;
