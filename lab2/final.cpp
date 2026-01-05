@@ -1,11 +1,8 @@
 #include <glad/gl.h>
 #include <GLFW/glfw3.h>
-
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
-
 #include "render/shader.h"
-
 
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb/stb_image.h>
@@ -28,7 +25,6 @@ static GLuint depthModelID = 0;
 
 // Forward declaration
 static void initShadowMap();
-
 
 static GLFWwindow* window;
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
@@ -124,7 +120,6 @@ static void initShadowMap() {
 
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
 }
-
 
 // ============================================================
 // Building structure
@@ -280,8 +275,6 @@ struct Building {
         lightIntID = glGetUniformLocation(programID, "lightIntensity");
         lightSpaceMatrixID = glGetUniformLocation(programID, "lightSpaceMatrix");
         shadowMapID = glGetUniformLocation(programID, "shadowMap");
-
-
         textureID = LoadTextureTileBox(texture_path);
 
         glBindVertexArray(0);
@@ -346,7 +339,6 @@ struct Building {
         glBindTexture(GL_TEXTURE_2D, depthMapTex);
         glUniform1i(shadowMapID, 1);
 
-
         glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, (void*)0);
 
         glDisableVertexAttribArray(0);
@@ -377,7 +369,6 @@ struct Building {
         glDisableVertexAttribArray(0);
         glBindVertexArray(0);
     }
-
 
     void cleanup() {
         glDeleteBuffers(1, &vertexBufferID);
@@ -687,7 +678,6 @@ int main() {
         ground.renderDepth(depthProgram, depthModelID);
 
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
-
 
         int width, height;
         glfwGetFramebufferSize(window, &width, &height);
