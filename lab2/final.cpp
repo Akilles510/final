@@ -670,10 +670,10 @@ int main() {
         }
         // ---------- PASS A: render depth map ----------
         glm::vec3 lightPos(200.0f, 600.0f, 200.0f);
-        glm::vec3 lightTarget(0.0f, 0.0f, 0.0f);
+        glm::vec3 lightTarget = playerPos;
 
         glm::mat4 lightView = glm::lookAt(lightPos, lightTarget, glm::vec3(0, 1, 0));
-        float orthoSize = 600.0f;
+        float orthoSize = 1200.0f; // Change how much shadow in the scene. 
         glm::mat4 lightProj = glm::ortho(-orthoSize, orthoSize, -orthoSize, orthoSize, 1.0f, 2000.0f);
         glm::mat4 lightSpaceMatrix = lightProj * lightView;
 
