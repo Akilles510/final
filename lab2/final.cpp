@@ -310,7 +310,7 @@ struct Building {
         glUniformMatrix4fv(lightSpaceMatrixID, 1, GL_FALSE, &lightSpaceMatrix[0][0]);
 
 
-        glm::vec3 lightPos(0.0f, 500.0f, 0.0f);
+        glm::vec3 lightPos(200.0f, 600.0f, 200.0f);
         glm::vec3 lightIntensity(50.0f, 50.0f, 50.0f);
         glUniform3f(lightPosID, lightPos.x, lightPos.y, lightPos.z);
         glUniform3f(lightIntID, lightIntensity.x, lightIntensity.y, lightIntensity.z);
